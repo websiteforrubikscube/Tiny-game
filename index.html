@@ -21,6 +21,7 @@ setTimeout(something,pause)
                 }
 
             function click(){
+                debugger;
                 alert("worked");
                 on=!on;
                 pause=Math.random*10;
@@ -30,6 +31,7 @@ setTimeout(something,pause)
                   document.getElementById("click").innerHTML="click to start again";
               }
             }
+            document.body.addEventListener("click", click);
             proccess();
         </script>
         <style>
