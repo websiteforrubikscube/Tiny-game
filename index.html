@@ -4,12 +4,15 @@
             var on=false;
             var time=0;
             var pause=0;
+            var happened=false;
             function add(){
                 if(on==true)
                 time++;
             }
             function something(){
 document.getElementById("click").innerHTML="CLICK"
+happened++;
+if(happened==1)
 setInterval(add,1000);
             }
             function proccess(){
