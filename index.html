@@ -25,7 +25,6 @@ setTimeout(something,pause)
                pause=Math.random*10;
              if(on==false){
                  document.getElementById("time").innerHTML=time;
-                 time=0;
                  document.getElementById("click").innerHTML="click to start again";
              }
             }
@@ -41,6 +40,6 @@ setTimeout(something,pause)
         </head>
         <body onclick="click();">
             <h3 id="time" style="width: 100%;"></h3>
-            <h3 id="click" onclick="clickme()" >click to start</h3>
+            <h3 id="click" onclick="clickme();time=0;" >click to start</h3>
             </body>
     </html>
