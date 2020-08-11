@@ -1,7 +1,7 @@
 <html>
     <head>
         <script>
-            var on=false;
+     /*        var on=false;
             var time=0;
             var pause=0;
             function add(){
@@ -18,21 +18,21 @@ setInterval(add,1000);
                     "dont click"
 setTimeout(something,pause)
                 }    
-                }
+                } */
 
             function click(){
-                debugger;
+              //  debugger;
                 alert("worked");
-                on=!on;
-                pause=Math.random*10;
-              if(on==false){
-                  document.getElementById("time").innerHTML=time;
-                  time=0;
-                  document.getElementById("click").innerHTML="click to start again";
-              }
+             //   on=!on;
+            //    pause=Math.random*10;
+            //  if(on==false){
+               //   document.getElementById("time").innerHTML=time;
+              //    time=0;
+              //    document.getElementById("click").innerHTML="click to start again";
+            //  }
             }
-            document.body.addEventListener("click", click);
-            proccess();
+          
+         //  proccess();
         </script>
         <style>
             body{font-family: Arial;display: flex;
@@ -44,5 +44,6 @@ setTimeout(something,pause)
         <body onclick="click();">
             <h3 id="time" style="width: 100%;"></h3>
             <h3 id="click">click to start</h3>
+            <input type="button" onclick="alert('worked')" />
             </body>
     </html>
