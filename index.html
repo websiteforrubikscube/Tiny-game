@@ -2,14 +2,34 @@
     <head>
         <script>
             var on=false;
+            var time=0;
+            var pause=0;
+            function add(){
+                if(on==true)
+                time++;
+            }
+            function something(){
+document.getElementById("click").innerHTML="CLICK"
+setInterval(add,1000);
+            }
             function proccess(){
-                    
+                if(on==true){
+                    document.getElementById("click").innerHTML=
+                    "dont click"
+setTimeout(something,pause)
+                }    
                 }
+
             function click(){
                 on=!on;
-                if(on==true){}
-                if(on==false){}
+                pause=Math.random*10;
+              if(on==false){
+                  document.getElementById("time").innerHTML=time;
+                  time=0;
+                  document.getElementById("click").innerHTML="click to start again";
+              }
             }
+            proccess();
         </script>
         <style>
             body{font-family: Arial;display: flex;
