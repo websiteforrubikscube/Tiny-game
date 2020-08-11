@@ -13,7 +13,7 @@
 document.getElementById("click").innerHTML="CLICK"
 happened++;
 if(happened==1)
-setInterval(add,1000);
+setInterval(add,1);
             }
             function proccess(){
                 if(on==true){
@@ -29,7 +29,7 @@ setTimeout(something,pause)
                pause=Math.random*10000;
                proccess();
              if(on==false){
-                 document.getElementById("time").innerHTML=time;
+                 document.getElementById("time").innerHTML=time+" milliseconds";
                  document.getElementById("click").innerHTML="click to start again";
              }
             }
