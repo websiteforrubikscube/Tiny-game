@@ -22,14 +22,15 @@ setTimeout(something,pause)
 
             function clickme(){
                on=!on;
+
                pause=Math.random*10;
+               proccess();
              if(on==false){
                  document.getElementById("time").innerHTML=time;
                  document.getElementById("click").innerHTML="click to start again";
              }
             }
           
-     proccess();
         </script>
         <style>
             body{font-family: Arial;display: flex;
