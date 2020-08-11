@@ -1,7 +1,7 @@
 <html>
     <head>
         <script>
-     /*        var on=false;
+            var on=false;
             var time=0;
             var pause=0;
             function add(){
@@ -18,18 +18,16 @@ setInterval(add,1000);
                     "dont click"
 setTimeout(something,pause)
                 }    
-                } */
+                }
 
             function clickme(){
-              //  debugger;
-                alert("worked");
-             //   on=!on;
-            //    pause=Math.random*10;
-            //  if(on==false){
-               //   document.getElementById("time").innerHTML=time;
-              //    time=0;
-              //    document.getElementById("click").innerHTML="click to start again";
-            //  }
+               on=!on;
+               pause=Math.random*10;
+             if(on==false){
+                 document.getElementById("time").innerHTML=time;
+                 time=0;
+                 document.getElementById("click").innerHTML="click to start again";
+             }
             }
           
          //  proccess();
